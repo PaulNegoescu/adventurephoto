@@ -48,14 +48,14 @@ nav {
 }
 
 @media screen and (max-width: 992px) {
-	.navContainer,
+	.globalWrapper .navContainer,
 	nav {
 		width: 30%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.navContainer {
+	.globalWrapper .navContainer {
 		display: none;
 	}
 }
