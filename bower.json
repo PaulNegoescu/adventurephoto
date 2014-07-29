@@ -1,0 +1,22 @@
+{
+  "name": "adventurephoto",
+  "version": "1.0.0",
+  "homepage": "http://adventurephoto.ro",
+  "authors": [
+    "Paul Negoescu <paul.negoescu@gmail.com>"
+  ],
+  "license": "private",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "jquery-ui": "~1.11.0",
+    "bootstrap-sass": "~3.0.2"
+  }
+}
