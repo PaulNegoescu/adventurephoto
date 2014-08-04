@@ -14,10 +14,28 @@ body {
 	background: #f8f8f8;
 }
 
+a {
+    color: #88aa00;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 .globalWrapper {
 	display: table;
 	width: 100%;
-	
+
 	> div {
 		display: table-cell;
 		vertical-align: top;
@@ -33,9 +51,9 @@ nav {
 	width: 300px;
 	padding-right: 20px;
 	position: fixed;
-	
+
 	@include box-shadow(3px 0px 1px 0px rgba(50, 50, 50, 0.75));
-	
+
 	ul {
 		li {
 			font-size: 1.4rem;
@@ -58,4 +76,30 @@ nav {
 	.globalWrapper .navContainer {
 		display: none;
 	}
+}
+
+.posts {
+    margin-bottom: 30px;
+}
+
+.post {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(46, 50, 50, 0.39);
+    -moz-box-shadow:    2px 2px 5px 0px rgba(46, 50, 50, 0.39);
+    box-shadow:         2px 2px 5px 0px rgba(46, 50, 50, 0.39);
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    padding: 5px;
+    width: 25%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .location {
+        margin: 5px 0 0;
+        text-align: center;
+    }
 }
